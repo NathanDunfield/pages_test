@@ -1,0 +1,162 @@
+/*
+style sheet for "generic" web pages
+Old background was: "#D2C6E5";
+*/
+
+body { 
+  color: black;
+  background: white;
+  margin-left: 9%;
+  margin-right: 5%;
+  margin-top: 3.5%;
+  font-family: Times, "Times New Roman", serif;
+}
+
+
+
+h1 { 
+  margin-left: -6%;
+  font-size: 150%;
+}
+
+h1.name{ 
+  margin-left: 0em;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: Lucida Grande, Helvetica, Arial, sans-serif; }
+
+h2,h3,h4,h5,h6 { margin-left: -4%; }
+h2 { font-size: 125%; }
+h3, h4, h5, h6 { font-size: 115%; }
+
+
+/* special headings for first page */
+
+h1.name{ 
+  margin-left: -0.3em;
+}
+
+h2.small{ 
+  margin-left: 0em;
+  font-size: 105%;
+}
+
+/* for spacing of the items on preprints page */
+
+ol.biblist li { margin-bottom: 0.4em; }
+
+/* bulletless list style for main page: */
+
+ul.bulletless { 
+  list-style: none;
+  padding: 0em;
+  margin-left: 1em;
+}
+
+ul.bulletless li{ 
+  margin-bottom: 0.1em;
+}
+
+/* link code */
+
+a { text-decoration: none; }
+
+a:link { 
+  color: rgb(12, 5, 222);
+}
+
+a:visited { 
+  color: rgb(167, 7, 184);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* plain horiz. rule */
+/* used to specify "margin: 10%" but Netscape 4.7 */
+/* uses the width of the whole page, messing things up */
+
+hr { 
+  height: 1px; 
+  color: black; 
+  background-color: black;
+  border: none;
+}
+
+/*
+
+Info for slide-bar (using tables, how vugar)
+
+For a different look do:
+td.side { 
+...
+border-left: thin solid black;
+...
+}
+
+background: #D2C6E5;
+*/
+
+
+td.side { 
+padding: 1em;
+background: #D2C6E5;
+font-family: Lucida Grande, Helvetica, sans-serif;
+font-size: small;
+
+}
+
+
+div.sideimage { 
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+div.sidetext { 
+  white-space: nowrap;
+}
+
+
+td.side hr { 
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+/* style for footer on each page */
+
+div.foot { 
+  margin-top: 2em;
+  margin-left: -7%;
+  border-top: thin solid black;
+ }
+
+
+/* Useful for things like schedules */
+
+dl.schedule { 
+    line-height: 120%;
+}
+
+dl.schedule dt
+{
+	clear: left;
+	float: left;
+	width: 4em;
+	margin: 0;
+	padding: 0.2em;
+	font-weight:  bold;
+	font-variant:small-caps;
+}
+
+dl.schedule dd
+{
+	margin-left: 0em;
+	padding: 0.2em;
+}
+
+dl.schedule p
+{
+  margin-bottom: 0.1em;
+  margin-top: 0.5em;
+}
